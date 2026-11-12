@@ -3,14 +3,20 @@ import java.util.Scanner;
 public class Kuis25Zaky {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         int porsi;  
         int total = 0;
+        int porsiTerbanyak ;
+        int porsiLebihDariDua ;
         int jumlahTransaksi = 0;
 
         System.out.print("Jumlah porsi (0 = selesai): ");
         porsi = sc.nextInt();
 
         while (porsi != 0) {
+            if (porsi < 1 || porsi > 10){
+                System.out.println("Porsi tidak valid, tolong masukkan ulang");
+            }
 
             System.out.print("Jumlah porsi (0 = selesai): ");
             porsi = sc.nextInt();
@@ -20,6 +26,14 @@ public class Kuis25Zaky {
             System.out.println("Biaya: Rp " + biaya);
             jumlahTransaksi++;
         }
+
+        if (porsi >=2 ){
+            System.out.println("Porsi Lebih dari dua " + porsiLebihDariDua);
+        }
+        if (porsi > 5){
+            System.out.println("Porsi Terbanyak adalah " + porsiTerbanyak);
+        }
+
 
         System.out.println("=== RINGKASAN ===");
         System.out.println("Jumlah transaksi : " + jumlahTransaksi);
