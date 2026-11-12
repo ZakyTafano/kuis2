@@ -6,8 +6,8 @@ public class Kuis25Zaky {
         
         int porsi;  
         int total = 0;
-        int porsiTerbanyak 0;
-        int porsiLebihDariDua 0 ;
+        int porsiTerbanyak =0;
+        int porsiLebihDariDua =0 ;
         int jumlahTransaksi = 0;
 
         System.out.print("Masukkan NIM anda :");
